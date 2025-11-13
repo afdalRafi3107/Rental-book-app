@@ -10,6 +10,6 @@ func main() {
 	cfg := config.LoadEnv()
 
 	app:= http.NewFiberApp(cfg)
-	log.Println("Server is Running at ", cfg.Port)
+	log.Println("Server is Running on port: ", cfg.Port)
 	log.Fatal(app.Listen(":"+cfg.Port))
 }
