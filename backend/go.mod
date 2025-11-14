@@ -16,6 +16,7 @@ require (
 	github.com/gofiber/schema v1.6.0 // indirect
 	github.com/gofiber/utils v0.0.10 // indirect
 	github.com/gofiber/utils/v2 v2.0.0-rc.2 // indirect
+	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/schema v1.1.0 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect

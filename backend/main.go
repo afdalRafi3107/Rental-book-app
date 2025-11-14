@@ -11,6 +11,7 @@ import (
 func main() {
 	r := fiber.New()
 	routes.BookRoute(r)
+	routes.AuthRoute(r)
 	config.ConnectDB()
 	config.EnvLoad()
 	r.Listen(":"+os.Getenv("PORT"))
