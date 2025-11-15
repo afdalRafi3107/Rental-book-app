@@ -1,6 +1,7 @@
 package handler
 
 import (
+	"log"
 	"rental-book/internal/entity"
 	"rental-book/internal/service"
 	"rental-book/pkg/utils"
@@ -46,6 +47,6 @@ func (h *AuthHandler) Login(c *fiber.Ctx) error {
 	}
 
 	token, _ := utils.GenerateToken(user.ID)
-
+	log.Println("token : ", token)
 	return c.JSON(fiber.Map{"token": token})
 }
